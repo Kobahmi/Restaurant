@@ -29,7 +29,7 @@ const headerCreate = () => {
         setActive(aboutBtn);
         renderAbout()
     })
-    
+
     const menuBtn = document.createElement("button")
     menuBtn.classList.add("nav")
     menuBtn.setAttribute("id", "menu-btn")

@@ -6,7 +6,7 @@ const renderMenu = () => {
     menuContainer.innerHTML = `        
     <div class="gallery">
     <h1>MENU</h1>
-    <img class="restaurant" src="./images/restaurant.jpg" alt="food">
+    <img class="restaurant" src="./images/food.jpg" alt="food">
 </div>
 
 <main class="main">
