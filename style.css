@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    color: white;
+    background-image: linear-gradient(black,rgb(82, 82, 82),black);
+    text-align: center;
+}
+
+button {
+    font-family: Nunito, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 40px;
+    opacity: 95%;
+}
+
+.brand {
+    font-family: Dynapuff, sans-serif;
+    font-style: italic;
+    text-align: left;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav {
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav:hover {
+    scale: 110%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.restaurant {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.gallery {
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+    font-size: 5rem;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+
+}
+
+.gallery > * {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+
+
+
+.main {
+    display: block;
+    line-height: 2rem;
+    padding: 50px;
+    font-size: 1.3rem;
+}
+
+p {
+    padding: 20px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 40px;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+
+.menu-card {
+    border: solid 3px white;
+    border-radius: 20px;
+    margin-bottom: auto;
+    height: 100%;
+    padding-top: 20px;
+    text-align: start;
+}
+
+.menu-card h2 {
+    border-bottom: solid white;
+    line-height: 6rem;
+    font-size: 3rem;
+    margin-inline: 20px;
+}
+
+.food {
+    margin-bottom: 40px;
+}
+
+.food>h3 {
+    font-size: 2rem;
+    font-weight:bolder;
+    line-height: 3rem;
+    margin-inline: 20px;
+    padding-bottom: 5px;
+}
+
+.food>p {
+    line-height: 2rem;
+    padding-block: 5px;
+}
+
+.food-container {
+    padding-top: 40px;
+    
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.contact-container h1 {
+    font-size: 4rem;
+    line-height: 3rem;
+}
+
+.contact-container p {
+    line-height: 8rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: minmax(700px, 1fr);
+    max-width: 700px;
+    margin-inline: auto;
+    gap: 30px;
+    height: 70vh;
+    align-content: flex-start;
+}
+
+.input {
+    height: 4rem;
+    padding: 20px;
+    font-family: Nunito, sans-serif;
+    font-size: 1.5rem;
+}
+
+#textarea {
+    height: 9rem;
+    min-height: 9rem;
+    max-height: 12rem;
+    max-width: 700px;
+}
+
+.send-btn {
+    padding: 15px;
+    margin-inline: auto;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(255, 255, 255);
+}
+
+.send-btn:hover {
+    scale: 110%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.active {
+    scale: 110%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.footer {
+    display: block;
+    line-height: 3rem;
+    background-color: rgb(0, 0, 0);
+    height: 5vh;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .brand {
+        text-align: center;
+        font-size: 3rem;
+        margin-block-end: 30px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .gallery {
+        font-size: clamp(3rem, 4rem, 5rem);
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .send-btn {
+        width: 7rem;
+    }
+}
