@@ -1,9 +1,9 @@
 const renderContact = () => {
-    const content = document.querySelector("#content")
+  const content = document.querySelector("#content");
 
-    const contactContainer = document.createElement("div");
-    contactContainer.classList.add("contact-container");
-    contactContainer.innerHTML = `        
+  const contactContainer = document.createElement("div");
+  contactContainer.classList.add("contact-container");
+  contactContainer.innerHTML = `        
     <main class="main">
 
     <h1>CONTACT US</h1>
@@ -27,9 +27,9 @@ const renderContact = () => {
 </main>
 
 
-<footer class="footer">Copyright @Kobahmi</footer>`;
+`;
 
-    content.appendChild(contactContainer)
-}
+  content.appendChild(contactContainer);
+};
 
-export default renderContact
+export default renderContact;
