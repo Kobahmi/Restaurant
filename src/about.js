@@ -1,9 +1,9 @@
 const renderAbout = () => {
-    const content = document.querySelector("#content")
+  const content = document.querySelector("#content");
 
-    const aboutContainer = document.createElement("div");
-    aboutContainer.classList.add("about-container");
-    aboutContainer.innerHTML = `        
+  const aboutContainer = document.createElement("div");
+  aboutContainer.classList.add("about-container");
+  aboutContainer.innerHTML = `        
     <div class="gallery">
     <h1>ABOUT</h1>
     <img class="restaurant" src="./images/restaurant.jpg" alt="food">
@@ -25,8 +25,7 @@ const renderAbout = () => {
 
 <footer class="footer">Copyright @Kobahmi</footer>`;
 
-    content.appendChild(aboutContainer)
-}
+  content.appendChild(aboutContainer);
+};
 
-export default renderAbout
-
+export default renderAbout;

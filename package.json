@@ -2,15 +2,17 @@
   "name": "restaurant",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kobahmi/Restaurant.git"
   },
-  "author": "",
+  "author": "kobahmi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Kobahmi/Restaurant/issues"
